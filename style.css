@@ -1,0 +1,342 @@
+@charset "UTF-8";
+@import url(//fonts.googleapis.com/earlyaccess/notosanstc.css);
+@import url(font-awesome/css/font-awesome.css);
+html {
+  height: 100%; }
+
+body {
+  font: 16px/20px 'open sans',sans-serif, 'Noto Sans TC',"微軟正黑體" !important;
+  margin: 0;
+  padding: 0;
+  height: 100%; }
+
+/*reset*/
+h1, h2, h3, h4, h5, p {
+  margin: 0;
+  padding: 0; }
+
+br {
+  display: block;
+  margin: 0 0 5px; }
+
+ol, ul {
+  margin: 0;
+  padding: 0; }
+
+li {
+  list-style: none; }
+
+body > img {
+  display: none; }
+
+img {
+  border: none;
+  padding: 0;
+  margin: 0; }
+
+a, a:active, a:visited, a:hover {
+  outline: none;
+  text-decoration: none;
+  background-color: none;
+  display: block;
+  -webkit-tap-highlight-color: transparent; }
+
+table, tr, td {
+  padding: 0;
+  border-spacing: 0; }
+
+/*reset end */
+html body {
+  width: 100%;
+  background-color: #f1f1f1; }
+  html body nav .navbar-brand {
+    padding: 0px;
+    position: absolute;
+    left: 50%;
+    margin-left: -105px; }
+    html body nav .navbar-brand img {
+      height: 50px; }
+  html body .section1 {
+    position: relative;
+    padding-top: 80px; }
+    html body .section1 .frame {
+      position: relative;
+      width: 95%;
+      margin: auto; }
+      html body .section1 .frame .player {
+        width: 100%;
+        position: relative;
+        border-radius: 15px;
+        background-color: #2f3b46;
+        padding: 20px; }
+        html body .section1 .frame .player .grey {
+          position: relative;
+          width: 100%;
+          background-color: #d8d8d8;
+          border-radius: 7px;
+          padding: 13px 11px 53px 11px; }
+          html body .section1 .frame .player .grey .program-info {
+            position: relative;
+            width: 100%;
+            background-color: white;
+            border-radius: 5px;
+            padding: 15px; }
+            html body .section1 .frame .player .grey .program-info .program-title {
+              text-align: center;
+              color: #2f3b46;
+              font-size: 18px; }
+            html body .section1 .frame .player .grey .program-info .program-album {
+              text-align: center;
+              color: #2f3b46;
+              font-size: 14px;
+              margin-top: 10px; }
+          html body .section1 .frame .player .grey .controller {
+            width: 100%;
+            padding-top: 9px; }
+            html body .section1 .frame .player .grey .controller .seekbar {
+              background-color: white;
+              width: 100%;
+              height: 5px;
+              border-radius: 3px; }
+              html body .section1 .frame .player .grey .controller .seekbar:before {
+                position: absolute;
+                content: ' ';
+                background-color: #e83b4d;
+                width: 30%;
+                height: 5px;
+                border-radius: 3px; }
+            html body .section1 .frame .player .grey .controller .control-row {
+              margin-top: 10px; }
+              html body .section1 .frame .player .grey .controller .control-row .auto-next {
+                position: absolute;
+                left: 50%;
+                margin-left: -136px;
+                margin-top: 9px; }
+                html body .section1 .frame .player .grey .controller .control-row .auto-next .auto-next-button {
+                  width: 20px;
+                  position: relative;
+                  display: inline; }
+                  html body .section1 .frame .player .grey .controller .control-row .auto-next .auto-next-button label {
+                    width: 15px;
+                    height: 15px;
+                    cursor: pointer;
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    background: #fcfff4;
+                    border-radius: 7px; }
+                    html body .section1 .frame .player .grey .controller .control-row .auto-next .auto-next-button label:after {
+                      content: '';
+                      border-top: none;
+                      border-right: none;
+                      background: transparent;
+                      opacity: 0;
+                      content: '';
+                      width: 9px;
+                      height: 9px;
+                      position: absolute;
+                      top: 3px;
+                      left: 3px;
+                      background-color: #19ca90;
+                      border-radius: 5px; }
+                  html body .section1 .frame .player .grey .controller .control-row .auto-next .auto-next-button input[type=checkbox] {
+                    visibility: hidden; }
+                    html body .section1 .frame .player .grey .controller .control-row .auto-next .auto-next-button input[type=checkbox]:checked + label:after {
+                      opacity: 1; }
+                html body .section1 .frame .player .grey .controller .control-row .auto-next span {
+                  font-size: 10px;
+                  vertical-align: text-bottom;
+                  color: #2f3b46; }
+              html body .section1 .frame .player .grey .controller .control-row .last, html body .section1 .frame .player .grey .controller .control-row .next {
+                position: absolute;
+                left: 50%;
+                width: 32px;
+                height: 32px;
+                background: #2f3b46;
+                border-radius: 16px;
+                border: 0;
+                box-shadow: 2px 2px 0px #999999; }
+                html body .section1 .frame .player .grey .controller .control-row .last:focus, html body .section1 .frame .player .grey .controller .control-row .next:focus {
+                  outline: 0; }
+                html body .section1 .frame .player .grey .controller .control-row .last i, html body .section1 .frame .player .grey .controller .control-row .next i {
+                  color: #f1f1f1;
+                  font-size: 12px; }
+              html body .section1 .frame .player .grey .controller .control-row .last {
+                margin-left: -67px;
+                margin-top: 2px; }
+                html body .section1 .frame .player .grey .controller .control-row .last:active {
+                  box-shadow: none;
+                  margin-left: -65px;
+                  margin-top: 4px; }
+              html body .section1 .frame .player .grey .controller .control-row .next {
+                margin-top: 2px;
+                margin-left: 40px; }
+                html body .section1 .frame .player .grey .controller .control-row .next:active {
+                  box-shadow: none;
+                  margin-top: 4px;
+                  margin-left: 42px; }
+              html body .section1 .frame .player .grey .controller .control-row .play {
+                position: absolute;
+                left: 50%;
+                width: 40px;
+                height: 40px;
+                background: #2f3b46;
+                border-radius: 20px;
+                border: 0;
+                box-shadow: 2px 2px 0px #999999;
+                margin-top: -2px;
+                margin-left: -18px; }
+                html body .section1 .frame .player .grey .controller .control-row .play:focus {
+                  outline: 0; }
+                html body .section1 .frame .player .grey .controller .control-row .play:active {
+                  box-shadow: none;
+                  margin-top: 0px;
+                  margin-left: -16px; }
+                html body .section1 .frame .player .grey .controller .control-row .play i {
+                  position: relative;
+                  color: #19ca90;
+                  font-size: 18px;
+                  left: 1px;
+                  top: 1px; }
+              html body .section1 .frame .player .grey .controller .control-row .volume {
+                width: 33px;
+                position: absolute;
+                left: 50%;
+                margin-left: 105px;
+                margin-top: 16px; }
+                html body .section1 .frame .player .grey .controller .control-row .volume input:before {
+                  content: "\f027";
+                  font-family: FontAwesome;
+                  font-size: 20px;
+                  color: white;
+                  margin-left: -18px;
+                  margin-top: -8px;
+                  position: absolute; }
+        html body .section1 .frame .player .intro-title {
+          color: white;
+          font-size: 18px;
+          margin-top: 15px; }
+        html body .section1 .frame .player .intro-content {
+          color: white;
+          font-size: 14px;
+          margin-top: 15px; }
+        html body .section1 .frame .player .keywords {
+          margin-top: 15px;
+          font-size: 14px;
+          color: white; }
+      html body .section1 .frame .player-feet {
+        width: 32px;
+        height: 14px;
+        background-color: #d8d8d8;
+        float: left;
+        margin-left: 20px;
+        border-radius: 0 0 7px 7px; }
+      html body .section1 .frame .player-feet2 {
+        width: 32px;
+        height: 14px;
+        background-color: #d8d8d8;
+        float: right;
+        margin-right: 20px;
+        border-radius: 0 0 7px 7px; }
+
+input[type=range] {
+  -webkit-appearance: none;
+  /* Hides the slider so that custom slider can be made */
+  width: 100%;
+  /* Specific width is required for Firefox. */
+  background: transparent;
+  /* Otherwise white in Chrome */ }
+
+input[type=range]::-webkit-slider-thumb {
+  -webkit-appearance: none; }
+
+input[type=range]:focus {
+  outline: none;
+  /* Removes the blue border. You should probably do some kind of focus styling for accessibility reasons though. */ }
+
+input[type=range]::-ms-track {
+  width: 100%;
+  cursor: pointer;
+  /* Hides the slider so custom styles can be added */
+  background: transparent;
+  border-color: transparent;
+  color: transparent; }
+
+/* Special styling for WebKit/Blink */
+input[type=range]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  border: 0;
+  height: 10px;
+  width: 10px;
+  border-radius: 5px;
+  background: #ffffff;
+  cursor: pointer;
+  margin-top: -3px;
+  /* You need to specify a margin in Chrome, but in Firefox and IE it is automatic */ }
+
+/* All the same stuff for Firefox */
+input[type=range]::-moz-range-thumb {
+  border: 0;
+  height: 10px;
+  width: 10px;
+  border-radius: 5px;
+  background: #ffffff;
+  cursor: pointer; }
+
+/* All the same stuff for IE */
+input[type=range]::-ms-thumb {
+  border: 0;
+  height: 10px;
+  width: 10px;
+  border-radius: 5px;
+  background: #ffffff;
+  cursor: pointer; }
+
+/*track*/
+input[type=range]::-webkit-slider-runnable-track {
+  width: 100%;
+  height: 3px;
+  cursor: pointer;
+  background: white;
+  border-radius: 2px;
+  border: 0; }
+
+input[type=range]:focus::-webkit-slider-runnable-track {
+  background: #19ca90; }
+
+input[type=range]::-moz-range-track {
+  width: 100%;
+  height: 3px;
+  cursor: pointer;
+  background: #19ca90;
+  border-radius: 2px;
+  border: 0; }
+
+input[type=range]::-ms-track {
+  width: 100%;
+  height: 3px;
+  cursor: pointer;
+  background: transparent;
+  border-color: transparent;
+  border-width: 16px 0;
+  color: transparent; }
+
+input[type=range]::-ms-fill-lower {
+  background: #2a6495;
+  border: 0.2px solid #010101;
+  border-radius: 2.6px;
+  box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d; }
+
+input[type=range]:focus::-ms-fill-lower {
+  background: #3071a9; }
+
+input[type=range]::-ms-fill-upper {
+  background: #3071a9;
+  border: 0.2px solid #010101;
+  border-radius: 2.6px;
+  box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d; }
+
+input[type=range]:focus::-ms-fill-upper {
+  background: #367ebd; }
+
+/*# sourceMappingURL=style.css.map */
