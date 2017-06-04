@@ -113,6 +113,15 @@ html body {
         font-family: FontAwesome;
         content: "\f0da";
         margin-right: 10px; }
+  html body nav .nav-bar-content .nav .dropdown .dropdown-toggle {
+    display: flex !important; }
+    html body nav .nav-bar-content .nav .dropdown .dropdown-toggle i, html body nav .nav-bar-content .nav .dropdown .dropdown-toggle .user {
+      flex: initial; }
+    html body nav .nav-bar-content .nav .dropdown .dropdown-toggle i {
+      font-size: 18px;
+      padding-top: 1px; }
+    html body nav .nav-bar-content .nav .dropdown .dropdown-toggle .user {
+      margin-left: 5px; }
   html body nav .nav-bar-content .sb-search {
     position: relative;
     width: 0%;

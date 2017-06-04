@@ -120,6 +120,19 @@ html{
 							}
 						}
 					}
+					.dropdown .dropdown-toggle{
+						display: flex !important;
+						i, .user{
+							flex: initial;
+						}
+						i{
+							font-size: 18px;
+							padding-top: 1px;
+						}
+						.user{
+							margin-left: 5px;
+						}
+					}
 				}
 				.sb-search {
 				    position: relative;
