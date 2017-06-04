@@ -148,10 +148,13 @@ html body {
       z-index: 10;
       padding: 10px 35px 10px 15px;
       font-family: inherit;
-      font-size: 16px;
+      font-size: 13px;
       vertical-align: middle;
       line-height: 16px;
       color: #2c3e50; }
+    @media (min-width: 768px) {
+      html body nav .nav-bar-content .sb-search {
+        margin-top: 10px; } }
   html body nav .nav-bar-content .sb-search-open {
     border: 1px solid #4c4c4c;
     border-radius: 30px; }
@@ -208,10 +211,22 @@ html body {
   html body nav .nav-bar-content .sb-search.sb-search-open,
   html body nav .nav-bar-content .no-js .sb-search {
     width: 100%; }
+    @media (min-width: 900px) {
+      html body nav .nav-bar-content .sb-search.sb-search-open,
+      html body nav .nav-bar-content .no-js .sb-search {
+        width: 250px; } }
   html body nav .nav-bar-content .sb-search.sb-search-open .sb-icon-search,
   html body nav .nav-bar-content .no-js .sb-search .sb-icon-search {
     color: #4c4c4c;
     z-index: 11; }
+  @media (min-width: 768px) {
+    html body nav .navbar-nav > li > .dropdown-menu {
+      border: none;
+      border-radius: 0px;
+      margin-top: 4px;
+      right: 3px; }
+      html body nav .navbar-nav > li > .dropdown-menu li > a {
+        padding: 10px 20px; } }
   html body .section1 {
     position: relative;
     padding-top: 80px;
@@ -395,6 +410,22 @@ html body {
           margin-top: 15px;
           font-size: 14px;
           color: white; }
+          @media (min-width: 992px) {
+            html body .section1 .frame .player .keywords:before, html body .section1 .frame .player .keywords:after {
+              content: " ";
+              position: absolute;
+              width: 32px;
+              height: 14px;
+              background-color: #d8d8d8;
+              border-radius: 0 0 7px 7px;
+              bottom: -14px; }
+            html body .section1 .frame .player .keywords:after {
+              right: 20px; } }
+        @media (min-width: 992px) {
+          html body .section1 .frame .player {
+            width: 595px;
+            float: left;
+            clear: both; } }
       html body .section1 .frame .player-feet {
         width: 32px;
         height: 14px;
@@ -402,6 +433,9 @@ html body {
         float: left;
         margin-left: 20px;
         border-radius: 0 0 7px 7px; }
+        @media (min-width: 992px) {
+          html body .section1 .frame .player-feet {
+            display: none; } }
       html body .section1 .frame .player-feet2 {
         width: 32px;
         height: 14px;
@@ -409,6 +443,9 @@ html body {
         float: right;
         margin-right: 20px;
         border-radius: 0 0 7px 7px; }
+        @media (min-width: 992px) {
+          html body .section1 .frame .player-feet2 {
+            display: none; } }
       html body .section1 .frame .series {
         position: relative;
         background-color: white;
@@ -446,6 +483,9 @@ html body {
                 text-decoration: underline !important; }
           html body .section1 .frame .series .episodes li .this-episode {
             color: #e83b4d; }
+          @media (min-width: 992px) {
+            html body .section1 .frame .series .episodes {
+              padding-bottom: 40px; } }
         html body .section1 .frame .series .next-episode {
           color: white;
           text-align: center;
@@ -456,20 +496,47 @@ html body {
           line-height: 30px; }
           html body .section1 .frame .series .next-episode:hover {
             background-color: #d8881d; }
+          @media (min-width: 992px) {
+            html body .section1 .frame .series .next-episode {
+              position: absolute;
+              width: 100%;
+              bottom: 0; } }
+        @media (min-width: 992px) {
+          html body .section1 .frame .series {
+            width: 342px;
+            float: right;
+            margin-top: 0px;
+            margin-left: 23px; } }
+      @media (min-width: 532px) {
+        html body .section1 .frame {
+          width: 532px; } }
+      @media (min-width: 992px) {
+        html body .section1 .frame {
+          width: 960px;
+          display: flex; } }
+    @media (min-width: 991px) {
+      html body .section1 {
+        padding-bottom: 70px; } }
   html body .section2 {
-    padding-top: 20px;
-    padding-bottom: 20px; }
+    padding: 20px 0; }
     html body .section2 .frame {
       text-align: center;
       margin: auto; }
       html body .section2 .frame .mibo {
         width: 105px;
         height: 105px; }
+        @media (min-width: 992px) {
+          html body .section2 .frame .mibo {
+            width: 120px;
+            height: 120px; } }
       html body .section2 .frame .interactive {
         margin-left: 20px; }
         html body .section2 .frame .interactive .text {
           margin-top: 20px;
           text-align: center; }
+          @media (min-width: 992px) {
+            html body .section2 .frame .interactive .text {
+              margin-top: 7px; } }
         html body .section2 .frame .interactive .interactive-control {
           margin-top: 10px;
           text-align: center;
@@ -543,6 +610,23 @@ html body {
             animation-name: offText; }
           html body .section2 .frame .interactive .interactive-control .interactive-button .switch:checked + .switch-label {
             background-color: #e83b4d; }
+          @media (min-width: 992px) {
+            html body .section2 .frame .interactive .interactive-control {
+              margin-top: 20px; } }
+        @media (min-width: 992px) {
+          html body .section2 .frame .interactive {
+            margin-left: 42px; } }
+      @media (min-width: 991px) {
+        html body .section2 .frame {
+          display: -webkit-flex;
+          display: flex;
+          -webkit-align-items: center;
+          align-items: center;
+          -webkit-justify-content: center;
+          justify-content: center; } }
+    @media (min-width: 991px) {
+      html body .section2 {
+        padding: 35px 0; } }
   html body footer {
     background-color: #2f3b46;
     color: white;
@@ -552,6 +636,11 @@ html body {
     html body footer .frame {
       width: 90%;
       margin: auto; }
+      @media (min-width: 991px) {
+        html body footer .frame span {
+          margin-left: 15px; }
+          html body footer .frame span:first-child {
+            margin-left: 0; } }
       html body footer .frame .link {
         display: flex; }
         html body footer .frame .link a {
@@ -560,6 +649,9 @@ html body {
           flex: initial; }
           html body footer .frame .link a:first-child {
             margin-left: 0; }
+          @media (min-width: 991px) {
+            html body footer .frame .link a {
+              margin-left: 15px; } }
 
 input[type=range] {
   -webkit-appearance: none;

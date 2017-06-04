@@ -160,10 +160,13 @@ html{
 					    z-index: 10;
 					    padding: 10px 35px 10px 15px;
 					    font-family: inherit;
-					    font-size: 16px;
+					    font-size: 13px;
 					    vertical-align: middle;
 					    line-height: 16px;
 					    color: #2c3e50;
+					}
+					@media (min-width: 768px){
+						margin-top: 10px;
 					}
 				}
 
@@ -239,6 +242,9 @@ html{
 				.sb-search.sb-search-open,
 				.no-js .sb-search {
 				    width: 100%;
+				    @media (min-width: 900px){
+						width: 250px;
+					}
 				}
 
 				.sb-search.sb-search-open .sb-icon-search,
@@ -250,6 +256,17 @@ html{
 				.sb-search.sb-search-open .sb-search-submit,
 				.no-js .sb-search .sb-search-submit {
 					// z-index: 90;
+				}
+			}
+			.navbar-nav>li>.dropdown-menu{
+				@media (min-width: 768px){
+					border: none;
+					border-radius: 0px;
+					margin-top: 4px;
+					right: 3px;
+					li>a{
+						padding: 10px 20px;
+					}
 				}
 			}
 		}
@@ -475,6 +492,25 @@ html{
 						margin-top: 15px;
 						font-size: 14px;
 						color: white;
+						@media (min-width: 992px){
+							&:before, &:after{
+								content: " ";
+								position: absolute;
+								width: 32px;
+					    		height: 14px;
+					    		background-color: #d8d8d8;
+					    		border-radius: 0 0 7px 7px;
+					    		bottom: -14px;
+							}
+							&:after{
+								right: 20px;
+							}
+						}
+					}
+					@media (min-width: 992px){
+						width: 595px;
+						float: left;
+						clear: both;
 					}
 				}
 				.player-feet{
@@ -484,6 +520,9 @@ html{
 				    float: left;
 				    margin-left: 20px;
 				    border-radius: 0 0 7px 7px;
+				    @media (min-width: 992px){
+						display: none;
+					}
 				}
 				.player-feet2{
 					width: 32px;
@@ -492,6 +531,9 @@ html{
 				    float: right;
 				    margin-right: 20px;
 				    border-radius: 0 0 7px 7px;
+				    @media (min-width: 992px){
+						display: none;
+					}
 				}
 				.series{
 					position: relative;
@@ -541,6 +583,9 @@ html{
 								color: $pink;
 							}
 						}
+						@media (min-width: 992px){
+							padding-bottom: 40px;
+						}
 					}
 					.next-episode{
 						color: white;
@@ -553,25 +598,52 @@ html{
 						&:hover{
 							background-color: #d8881d;
 						}
+						@media (min-width: 992px){
+							position: absolute;
+    						width: 100%;
+    						bottom: 0;
+						}
+					}
+					@media (min-width: 992px){
+						width: 342px;
+						float: right;
+						margin-top: 0px;
+						margin-left: 23px;
 					}
 				}
+				@media (min-width: 532px){
+					width: 532px;
+				}
+				@media (min-width: 992px){
+					width: 960px;
+					display: flex;
+				}
+			}
+			@media (min-width: 991px){
+				padding-bottom: 70px;
 			}
 		}
 		.section2{
-			padding-top: 20px;
-			padding-bottom: 20px;
+			padding: 20px 0;
 			.frame{
 				text-align: center;
 				margin: auto;
 				.mibo{
 					width: 105px;
 					height: 105px;
+					@media (min-width: 992px){
+						width: 120px;
+						height: 120px;
+					}
 				}
 				.interactive{
           			margin-left: 20px;
           			.text{
 						margin-top: 20px;
 						text-align: center;
+						@media (min-width: 992px){
+          					margin-top: 7px;
+          				}
           			}
           			.interactive-control{
           				margin-top: 10px;
@@ -667,8 +739,25 @@ html{
 							  background-color: $pink;
 							}
 						}
+						@media (min-width: 992px){
+							margin-top: 20px;
+						}
+          			}
+          			@media (min-width: 992px){
+          				margin-left: 42px;
           			}
 				}
+				@media (min-width: 991px){
+					display: -webkit-flex;
+	  				display:         flex;
+	  				-webkit-align-items: center;
+	          		align-items: center;
+	  				-webkit-justify-content: center;
+	          		justify-content: center;
+				}
+			}
+			@media (min-width: 991px){
+				padding: 35px 0;
 			}
 		}
 		footer{
@@ -680,6 +769,14 @@ html{
 			.frame{
 				width: 90%;
 				margin: auto;
+				span{
+					@media (min-width: 991px){
+						margin-left: 15px;
+						&:first-child{
+							margin-left: 0;
+						}
+					}
+				}
 				.link{
 					display: flex;
 					a{
@@ -688,6 +785,9 @@ html{
 						flex: initial;
 						&:first-child{
 							margin-left: 0;
+						}
+						@media (min-width: 991px){
+							margin-left: 15px;
 						}
 					}
 				}
