@@ -7,11 +7,24 @@ $(document).ready(function(){
 });
 
 $(document).ready(function(){
-  $('.series').slick({
-  	dots: true,
-  	slidesToShow: 1,
-  });
+	$('.slider-nav').slick({
+	  slidesToShow: 1,
+	  slidesToScroll: 1,
+	  arrows: false,
+	  fade: true,
+	  adaptiveHeight: true,
+	});
+	$('.series').slick({
+	  slidesToShow: 1,
+	  slidesToScroll: 1,
+	  asNavFor: '.slider-for',
+	  dots: true,
+	  focusOnSelect: true,
+	  arrows: true,
+	  asNavFor: '.slider-nav'
+	});
 });
+
 
 function buttonUp(){
          var valux = $('.sb-search-input').val(); 

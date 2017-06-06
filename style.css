@@ -995,14 +995,16 @@ html .record-page {
               border-bottom: 0; }
             html .record-page .section2 .board .episodes ul li .episode-number {
               text-align: center;
-              flex: 1;
+              width: 55px;
+              flex: none;
               border-right: 1px solid #b3b3b3; }
             html .record-page .section2 .board .episodes ul li .episode-name {
               margin-left: 5px;
-              flex: 3; }
+              flex: 1; }
             html .record-page .section2 .board .episodes ul li .check {
               text-align: center;
-              flex: 1;
+              width: 65px;
+              flex: none;
               border-left: 1px solid #b3b3b3;
               font-size: 10px; }
               html .record-page .section2 .board .episodes ul li .check a:before {
