@@ -101,6 +101,15 @@ $pink: #e83b4d;
   animation-duration: 0.5s;
 }
 
+.overflow{
+	overflow-y: hidden; 
+}
+
+.record-content::-webkit-scrollbar-track {
+    background-color: #e9e0d3;
+    border-radius: 7px;
+}
+
 html{
 	.home-page{
 		width: 100%;
@@ -1178,6 +1187,16 @@ html{
 							font-size: 12px;
 							color: black;
 						}
+					}
+				}
+				a[href="#series2"]{
+					.series-img{
+						background-image: url(img/youth.jpg);
+					}
+				}
+				a[href="#series3"]{
+					.series-img{
+						background-image: url(img/edu.jpg);
 					}
 				}
 				@media (min-width: 992px){

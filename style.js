@@ -7,6 +7,7 @@ $(document).ready(function(){
     $(".check a").click(function(){
         $(".record").addClass("slideInUp");
         $(".record").show();
+        $(".record-page").addClass("overflow")
     });
     $(".tab a").click(function(){
         $(".record").hide();
