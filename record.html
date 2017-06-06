@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>國立教育廣播電臺</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+	<link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+	<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+	<FilesMatch ".(ttf|otf|woff)$">
+	</FilesMatch>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+	<script type="text/javascript" src="style.js"></script>
+	<script type="text/javascript" src="slick/slick.min.js"></script>
+	<script type="text/javascript" src="bootstrap/js/bootstrap.js"></script>
+</head>
+<body class="record-page">
+	
+	<nav class="navbar navbar-default navbar-fixed-top" style="background-color: white;">
+	  	<div class="container-fluid">
+	    	
+		    <div class="navbar-header">
+		     	<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+		        	<span class="sr-only">Toggle navigation</span>
+		        	<span class="icon-bar"></span>
+		        	<span class="icon-bar"></span>
+		        	<span class="icon-bar"></span>
+		    	</button>
+		    	<a class="navbar-brand" href="#">
+		      		<img src="img/brand.png" alt="國立廣播教育電台">
+		    	</a>
+		    </div>
+
+		    <div class="nav-bar-content collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+		      <ul class="nav navbar-nav">
+		        <li ><a href="index.html">互動學習空間</a></li>
+		        <li class="active2"><a href="record.html">我的作答紀錄</a></li>
+		      </ul>
+		      
+		      <ul class="nav navbar-nav navbar-right">
+
+		        <li class="dropdown">
+		          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+		          	<i class="fa fa-user-circle-o" aria-hidden="true"></i>
+		          	<div class="user">
+		          		Sylvia Ritchel<!--這裡放使用者資訊-->
+		          	</div>
+		          </a>
+		          <ul class="dropdown-menu">
+		            <li>
+		            	<a href="#"><!--登出-->
+		            		登出
+		            	</a>
+		            </li>
+		          </ul>
+		        </li>
+		      </ul>
+		      
+
+				<form id="sb-search" class="sb-search navbar-right">
+					<input class="sb-search-input " onkeyup="buttonUp();" placeholder="請輸入節目名稱或關鍵字" onblur="monkey();" type="search" value="" name="search" id="search">
+					<input class="sb-search-submit" type="submit"  value="">
+					<span class="sb-icon-search">
+						<i class="fa fa-search"></i>
+					</span>
+			    </form>
+
+		    </div>
+	  	</div>
+	</nav>
+
+	<section class="section1">
+		<div class="page-title">作答紀錄</div>
+		<ul class="series">
+			<li>
+				<a href="" class="series-content">
+					<div class="series-img"></div>
+					<div class="series-intro">
+						<div class="series-name">自然有意思</div>
+						<div class="series-number">
+							共 <span>8</span> 集
+						</div>
+					</div>
+				</a>	
+			</li>
+			
+			<li>
+				<a href="" class="series-content">
+					<div class="series-img"></div>
+					<div class="series-intro">
+						<div class="series-name">青年故事館</div>
+						<div class="series-number">
+							共 <span>10</span> 集
+						</div>
+					</div>
+				</a>
+			</li>
+			<li>
+				<a href="" class="series-content">
+					<div class="series-img"></div>
+					<div class="series-intro">
+						<div class="series-name">教育心動線</div>
+						<div class="series-number">
+							共 <span>18</span> 集
+						</div>
+					</div>
+				</a>
+			</li>
+		</div>
+
+	</section>
+
+	<section class="section2">
+		<div class="board">
+		<div class="tab">所有節目</div>
+			<div class="episodes">
+				<ul>
+					<li>
+						<span class="episode-number">第一集</span>
+						<span class="episode-name">台北植物園與山林保種</span>
+						<span class="check">
+							<a href="">查看紀錄</a>
+						</span>
+					</li>
+					<li>
+						<span class="episode-number">第二集</span>
+						<span class="episode-name">漂流木爭議與山林保育</span>
+						<span class="check">
+							<a href="">查看紀錄</a>
+						</span>
+					</li>
+					<li>
+						<span class="episode-number">第三集</span>
+						<span class="episode-name">魚菜共生</span>
+						<span class="check">
+							<a href="">查看紀錄</a>
+						</span>
+					</li>
+					<li>
+						<span class="episode-number">第四集</span>
+						<span class="episode-name">金山小白鶴帶來的土地生機</span>
+						<span class="check">
+							<a href="">查看紀錄</a>
+						</span>
+					</li>
+					<li>
+						<span class="episode-number">第五集</span>
+						<span class="episode-name">都市林木的重要性與保護</span>
+						<span class="check">
+							<a href="">查看紀錄</a>
+						</span>
+					</li>
+					<li>
+						<span class="episode-number">第六集</span>
+						<span class="episode-name">蜜蜂衰竭的研究</span>
+						<span class="check">
+							<a href="">查看紀錄</a>
+						</span>
+					</li>
+					<li>
+						<span class="episode-number">第七集</span>
+						<span class="episode-name">外來種刺桐釉的小蜂</span>
+						<span class="check">
+							<a href="">查看紀錄</a>
+						</span>
+					</li>
+					<li>
+						<span class="episode-number">第八集</span>
+						<span class="episode-name">食用昆蟲</span>
+						<span class="check">
+							<a href="">查看紀錄</a>
+						</span>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</section>
+	<footer>
+		<div class="frame">
+			<span class="address">地址：(10066) 臺北市中正區南海路45號</span>
+			<span class="tel">電話：(02) 2388-0600</span>
+			<span class="fax">傳真：(02) 2389-3126</span>
+			<span class="tv">TANET VOIP：99160500</span>
+			<span class="email">服務信箱： service@ner.gov.tw</span>
+			<span class="web">最佳使用瀏覽器：Google Chrome、Firefox、Apple Safari</span>
+			<div class="link">
+				<a href="#">資訊安全政策</a>
+				<a href="#">隱私權保護政策</a>
+				<a href="#">版權宣告</a>
+				<a href="#">聯絡我們</a>
+			</div>
+		</div>
+	</footer>
+</body>
+</html>

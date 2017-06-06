@@ -6,6 +6,13 @@ $(document).ready(function(){
     });
 });
 
+$(document).ready(function(){
+  $('.series').slick({
+  	dots: true,
+  	slidesToShow: 1,
+  });
+});
+
 function buttonUp(){
          var valux = $('.sb-search-input').val(); 
             valux = $.trim(valux).length;
