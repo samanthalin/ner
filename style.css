@@ -90,6 +90,16 @@ table, tr, td {
     top: -19px;
     opacity: 1;
     transform: translateX(11px); } }
+@keyframes slideInUp {
+  0% {
+    transform: translate3d(0, 100%, 0);
+    visibility: visible; }
+  100% {
+    transform: translate3d(0, 0, 0); } }
+.slideInUp {
+  animation-name: slideInUp;
+  animation-duration: 0.5s; }
+
 html .home-page {
   width: 100%;
   background-color: #f1f1f1;
@@ -946,6 +956,9 @@ html .record-page {
           html .record-page .section1 .series .series-content .series-intro .series-number {
             font-size: 12px;
             color: black; }
+      @media (min-width: 992px) {
+        html .record-page .section1 .series {
+          width: 750px; } }
   html .record-page .section2 {
     background-color: #58a292;
     border-top: 10px solid #19ca90;
@@ -957,7 +970,8 @@ html .record-page {
       width: 90%;
       margin: auto;
       padding: 30px 5px 30px 5px;
-      border-radius: 10px; }
+      border-radius: 10px;
+      max-width: 980px; }
       html .record-page .section2 .board .tab {
         position: absolute;
         width: 150px;
@@ -983,7 +997,17 @@ html .record-page {
         html .record-page .section2 .board .tab:after {
           left: 150px;
           border-width: 20px 20px 0 0;
-          border-color: #19ca90 transparent transparent transparent; }
+          border-color: #19ca90 transparent transparent transparent;
+          top: 0; }
+        html .record-page .section2 .board .tab a {
+          color: #58a292; }
+          html .record-page .section2 .board .tab a:before {
+            font-family: FontAwesome;
+            content: "\f0d7";
+            margin-right: 5px; }
+        @media (min-width: 768px) {
+          html .record-page .section2 .board .tab {
+            font-size: 14px; } }
       html .record-page .section2 .board .episodes {
         font-size: 12px; }
         html .record-page .section2 .board .episodes ul {
@@ -998,6 +1022,9 @@ html .record-page {
               width: 55px;
               flex: none;
               border-right: 1px solid #b3b3b3; }
+              @media (min-width: 768px) {
+                html .record-page .section2 .board .episodes ul li .episode-number {
+                  width: 80px; } }
             html .record-page .section2 .board .episodes ul li .episode-name {
               margin-left: 5px;
               flex: 1; }
@@ -1007,10 +1034,77 @@ html .record-page {
               flex: none;
               border-left: 1px solid #b3b3b3;
               font-size: 10px; }
-              html .record-page .section2 .board .episodes ul li .check a:before {
-                font-family: FontAwesome;
-                content: "\f06e";
-                margin-right: 2px; }
+              html .record-page .section2 .board .episodes ul li .check a {
+                color: #2f3b46; }
+                html .record-page .section2 .board .episodes ul li .check a:hover {
+                  opacity: 0.5; }
+                html .record-page .section2 .board .episodes ul li .check a:before {
+                  font-family: FontAwesome;
+                  content: "\f06e";
+                  margin-right: 2px; }
+              @media (min-width: 768px) {
+                html .record-page .section2 .board .episodes ul li .check {
+                  font-size: 14px;
+                  line-height: 26px;
+                  width: 100px; } }
+        @media (min-width: 768px) {
+          html .record-page .section2 .board .episodes {
+            font-size: 14px;
+            line-height: 26px; } }
+      html .record-page .section2 .board .episode-title {
+        font-size: 16px;
+        font-weight: bolder;
+        text-align: center; }
+      html .record-page .section2 .board .record-content .quiz {
+        font-size: 12px;
+        margin-top: 15px;
+        line-height: 17px; }
+        html .record-page .section2 .board .record-content .quiz .question {
+          border-bottom: 1px solid #b3b3b3;
+          padding-left: 3px; }
+          @media (min-width: 768px) {
+            html .record-page .section2 .board .record-content .quiz .question {
+              padding-bottom: 3px; } }
+        html .record-page .section2 .board .record-content .quiz ul {
+          display: flex; }
+          html .record-page .section2 .board .record-content .quiz ul .answer {
+            flex: 1;
+            border-bottom: 1px solid #b3b3b3;
+            border-right: 1px solid #b3b3b3;
+            text-align: center;
+            padding: 3px 0; }
+            html .record-page .section2 .board .record-content .quiz ul .answer:last-child {
+              border-right: 0; }
+          html .record-page .section2 .board .record-content .quiz ul .cor {
+            color: #58a292; }
+          html .record-page .section2 .board .record-content .quiz ul .err {
+            color: #e83b4d; }
+        @media (min-width: 768px) {
+          html .record-page .section2 .board .record-content .quiz {
+            font-size: 14px; } }
+      @media (min-width: 768px) {
+        html .record-page .section2 .board .record-content {
+          padding: 0 30px; } }
+      @media (min-width: 768px) {
+        html .record-page .section2 .board {
+          min-height: 420px; } }
+    html .record-page .section2 .record {
+      background-color: #58a292;
+      border-top: 10px solid #19ca90;
+      border-bottom: 10px solid #19ca90;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      height: calc(100vh - 50px);
+      position: fixed;
+      top: 50px;
+      left: 0;
+      display: none;
+      width: 100%; }
+      html .record-page .section2 .record .board {
+        height: 100%; }
+        html .record-page .section2 .record .board .record-content {
+          height: 100%;
+          overflow-y: scroll; }
   html .record-page footer {
     background-color: #2f3b46;
     color: white;

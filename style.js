@@ -4,6 +4,13 @@ $(document).ready(function(){
         $(".pause-button").toggle();
         $(".background-grey").toggle();
     });
+    $(".check a").click(function(){
+        $(".record").addClass("slideInUp");
+        $(".record").show();
+    });
+    $(".tab a").click(function(){
+        $(".record").hide();
+    });
 });
 
 $(document).ready(function(){
@@ -15,13 +22,22 @@ $(document).ready(function(){
 	  adaptiveHeight: true,
 	});
 	$('.series').slick({
-	  slidesToShow: 1,
+	  slidesToShow: 3,
 	  slidesToScroll: 1,
 	  asNavFor: '.slider-for',
 	  dots: true,
 	  focusOnSelect: true,
 	  arrows: true,
-	  asNavFor: '.slider-nav'
+	  asNavFor: '.slider-nav',
+	  responsive: [
+	    {
+	      breakpoint: 992,
+	      settings: {
+	      	slidesToShow: 1,
+	  		slidesToScroll: 1,
+	      }
+	    }
+	  ]
 	});
 });
 

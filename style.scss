@@ -85,6 +85,22 @@ $pink: #e83b4d;
   100% { top: -19px; opacity: 1; transform: translateX(11px); }
 }
 
+@keyframes slideInUp {
+  0% {
+    transform: translate3d(0, 100%, 0);
+    visibility: visible;
+  }
+
+  100% {
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.slideInUp {
+  animation-name: slideInUp;
+  animation-duration: 0.5s;
+}
+
 html{
 	.home-page{
 		width: 100%;
@@ -1164,6 +1180,9 @@ html{
 						}
 					}
 				}
+				@media (min-width: 992px){
+					width: 750px;
+				}
 			}
 		}
 		.section2{
@@ -1173,12 +1192,12 @@ html{
 			padding-top: 10px;
 			padding-bottom: 10px;
 			.board{
-				// width: 100%;
 				background-color: #e9e0d3;
 				width: 90%;
 				margin: auto;
 				padding: 30px 5px 30px 5px;
 				border-radius: 10px;
+				max-width: 980px;
 				.tab{
 					position: absolute;
 					width: 150px;
@@ -1207,6 +1226,18 @@ html{
 						left: 150px;
 						border-width: 20px 20px 0 0;
 						border-color: $green transparent transparent transparent;
+						top: 0;
+					}
+					a{
+						color: #58a292;
+						&:before{
+							font-family: FontAwesome;
+							content: "\f0d7";
+							margin-right: 5px;
+						}
+					}
+					@media (min-width: 768px){
+						font-size: 14px;
 					}
 				}
 				.episodes {
@@ -1224,6 +1255,9 @@ html{
 								width: 55px;
 								flex: none;
 								border-right: 1px solid #b3b3b3;
+								@media (min-width: 768px){
+									width: 80px;
+								}
 							}
 							.episode-name{
 								margin-left: 5px;
@@ -1236,14 +1270,94 @@ html{
 								border-left: 1px solid #b3b3b3;
 								font-size: 10px;
 								a{
+									color: $darkblue;
+									&:hover{
+										opacity: 0.5;
+									}
 									&:before{
 										font-family: FontAwesome;
 										content: "\f06e";
 										margin-right: 2px;
 									}
 								}
+								@media (min-width: 768px){
+									font-size: 14px;
+									line-height: 26px;
+									width: 100px;
+								}
 							}
 						}
+					}
+					@media (min-width: 768px){
+						font-size: 14px;
+						line-height: 26px;
+					}
+				}
+				.episode-title{
+					font-size: 16px;
+					font-weight: bolder;
+					text-align: center;
+				}
+				.record-content{
+					.quiz{
+						font-size: 12px;
+						margin-top: 15px;
+						line-height: 17px;
+						.question{
+							border-bottom: 1px solid #b3b3b3;
+							padding-left: 3px;
+							@media (min-width: 768px){
+								padding-bottom: 3px;
+							}
+						}
+						ul{
+							display: flex;
+							.answer{
+								flex: 1;
+								border-bottom: 1px solid #b3b3b3;
+								border-right: 1px solid #b3b3b3;
+								text-align: center;
+								padding: 3px 0;
+								&:last-child{
+									border-right: 0;
+								}
+							}
+							.cor{
+								color: #58a292;
+							}
+							.err{
+								color: $pink;
+							}
+						}
+						@media (min-width: 768px){
+							font-size: 14px;
+						}
+					}
+					@media (min-width: 768px){
+						padding: 0 30px;
+					}
+				}
+				@media (min-width: 768px) {
+					min-height: 420px;
+				}
+			}
+			.record{
+				background-color: #58a292;
+				border-top: 10px solid $green;
+				border-bottom: 10px solid $green;
+				padding-top: 10px;
+				padding-bottom: 10px;
+				height: calc(100vh - 50px);
+				position: fixed;
+				top: 50px;
+				left: 0;
+				display: none;
+				width: 100%;
+				.board{
+					height: 100%;
+					.record-content{
+						height: 100%;
+						overflow-y: scroll;
 					}
 				}
 			}
