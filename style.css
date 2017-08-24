@@ -109,7 +109,7 @@ table, tr, td {
 
 html .home-page {
   width: 100%;
-  background-color: #f1f1f1;
+  background-color: #2f3b46;
   overflow-x: hidden; }
   html .home-page nav .navbar-default, html .home-page nav .navbar-toggle {
     background-color: white !important; }
@@ -541,7 +541,8 @@ html .home-page {
       html .home-page .section1 {
         padding-bottom: 70px; } }
   html .home-page .section2 {
-    padding: 20px 0; }
+    padding: 20px 0;
+    background-color: #f1f1f1; }
     html .home-page .section2 .frame {
       text-align: center;
       margin: auto; }
@@ -777,7 +778,7 @@ input[type=range]:focus::-ms-fill-upper {
 
 html .record-page {
   width: 100%;
-  background-color: #f1f1f1; }
+  background-color: #2f3b46; }
   html .record-page nav .navbar-default, html .record-page nav .navbar-toggle {
     background-color: white !important; }
   html .record-page nav .navbar-toggle {
@@ -917,7 +918,8 @@ html .record-page {
   html .record-page .section1 {
     position: relative;
     padding-top: 80px;
-    padding-bottom: 50px; }
+    padding-bottom: 50px;
+    background-color: #f1f1f1; }
     html .record-page .section1 .page-title {
       font-size: 18px;
       text-align: center; }

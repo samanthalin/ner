@@ -113,7 +113,7 @@ $pink: #e83b4d;
 html{
 	.home-page{
 		width: 100%;
-		background-color: $grey;
+		background-color: $darkblue;
 		overflow-x: hidden;
 		nav{
 			.navbar-default, .navbar-toggle{
@@ -660,6 +660,7 @@ html{
 		}
 		.section2{
 			padding: 20px 0;
+			background-color: $grey;
 			.frame{
 				text-align: center;
 				margin: auto;
@@ -941,7 +942,7 @@ input[type=range]:focus::-ms-fill-upper {
 html{
 	.record-page{
 		width: 100%;
-		background-color: $grey;
+		background-color: $darkblue;
 		nav{
 			.navbar-default, .navbar-toggle{
 				background-color: white !important;
@@ -1133,6 +1134,7 @@ html{
 			position: relative;
 			padding-top: 80px;
 			padding-bottom: 50px;
+			background-color: $grey;
 			.page-title{
 				font-size: 18px;
 				text-align: center;
