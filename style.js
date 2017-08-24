@@ -12,6 +12,22 @@ $(document).ready(function(){
     $(".tab a").click(function(){
         $(".record").hide();
     });
+
+    var h1 = $('.section1').outerHeight();
+    //console.log(h1);
+    var h2 = $('.section2').outerHeight();
+    //console.log(h2);
+    var hb = $('body').outerHeight();
+    //console.log(hb);
+    $('.home-page footer').outerHeight(hb - (h1 + h2));
+    //var h = $('footer').outerHeight();
+    //console.log(h);
+    var rh = $('.record-page').height();
+    console.log(rh);
+    var rh1 = $('.record-page .section1').height();
+    console.log(rh1);
+    $('.record-page footer').outerHeight(rh - rh1 - 420);
+
 });
 
 function buttonUp(){
