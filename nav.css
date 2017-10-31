@@ -1,0 +1,138 @@
+nav .navbar-default, nav .navbar-toggle {
+  background-color: white !important; }
+nav .navbar-toggle {
+  border: none; }
+  nav .navbar-toggle:focus {
+    background-color: white !important; }
+nav .navbar-brand {
+  padding: 0px;
+  padding-left: 10px; }
+  nav .navbar-brand img {
+    height: 50px; }
+@media (min-width: 768px) {
+  nav .navbar-header {
+    margin-right: 30px; } }
+nav .nav-bar-content .nav .active2 a {
+  color: #f4af2e; }
+  @media (min-width: 768px) {
+    nav .nav-bar-content .nav .active2 a:before {
+      position: absolute;
+      font-family: FontAwesome;
+      content: "\f0da";
+      margin-left: -13px; } }
+nav .nav-bar-content .nav .dropdown .dropdown-toggle {
+  display: flex !important; }
+  nav .nav-bar-content .nav .dropdown .dropdown-toggle i, nav .nav-bar-content .nav .dropdown .dropdown-toggle .user {
+    flex: initial; }
+  nav .nav-bar-content .nav .dropdown .dropdown-toggle i {
+    font-size: 18px;
+    padding-top: 1px; }
+  nav .nav-bar-content .nav .dropdown .dropdown-toggle .user {
+    margin-left: 5px; }
+nav .nav-bar-content .sb-search {
+  position: relative;
+  width: 0%;
+  min-width: 30px;
+  height: 30px;
+  float: left;
+  margin: auto;
+  margin-bottom: 10px;
+  overflow: hidden;
+  -webkit-transition: width 0.3s;
+  -moz-transition: width 0.3s;
+  transition: width 0.3s;
+  -webkit-backface-visibility: hidden; }
+  nav .nav-bar-content .sb-search .sb-search-input {
+    position: absolute;
+    top: 0;
+    right: 0px;
+    border: none;
+    outline: none;
+    background: #fff;
+    width: 100%;
+    height: 30px;
+    margin: 0;
+    z-index: 10;
+    padding: 10px 35px 10px 15px;
+    font-family: inherit;
+    font-size: 13px;
+    vertical-align: middle;
+    line-height: 16px;
+    color: #2c3e50; }
+  @media (min-width: 768px) {
+    nav .nav-bar-content .sb-search {
+      margin-top: 10px; } }
+nav .nav-bar-content .sb-search-open {
+  border: 1px solid #4c4c4c;
+  border-radius: 30px; }
+nav .nav-bar-content input[type="search"].sb-search-input {
+  -webkit-appearance: none;
+  -webkit-border-radius: 0px; }
+nav .nav-bar-content .sb-search-input::-webkit-input-placeholder {
+  color: #d8d8d8; }
+nav .nav-bar-content .sb-search-input:-moz-placeholder {
+  color: #d8d8d8; }
+nav .nav-bar-content .sb-search-input::-moz-placeholder {
+  color: #d8d8d8; }
+nav .nav-bar-content .sb-search-input:-ms-input-placeholder {
+  color: #d8d8d8; }
+nav .nav-bar-content .sb-icon-search,
+nav .nav-bar-content .sb-search-submit {
+  width: 26px;
+  height: 30px;
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+  padding: 0;
+  margin: 0;
+  line-height: 29px;
+  text-align: left;
+  cursor: pointer; }
+nav .nav-bar-content .sb-search-submit {
+  background: #fff;
+  /* IE needs this */
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+  /* IE 8 */
+  filter: alpha(opacity=0);
+  /* IE 5-7 */
+  opacity: 0;
+  color: transparent;
+  color: red;
+  border: none;
+  outline: none;
+  z-index: -1; }
+nav .nav-bar-content .sb-icon-search {
+  color: #4c4c4c;
+  z-index: 90;
+  font-size: 18px;
+  font-family: 'icomoon';
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  -webkit-font-smoothing: antialiased; }
+nav .nav-bar-content .sb-icon-search:before {
+  content: ""; }
+nav .nav-bar-content .sb-search.sb-search-open,
+nav .nav-bar-content .no-js .sb-search {
+  width: 100%; }
+  @media (min-width: 900px) {
+    nav .nav-bar-content .sb-search.sb-search-open,
+    nav .nav-bar-content .no-js .sb-search {
+      width: 250px; } }
+nav .nav-bar-content .sb-search.sb-search-open .sb-icon-search,
+nav .nav-bar-content .no-js .sb-search .sb-icon-search {
+  color: #4c4c4c;
+  z-index: 11; }
+@media (min-width: 768px) {
+  nav .navbar-nav > li > .dropdown-menu {
+    border: none;
+    border-radius: 0px;
+    margin-top: 4px;
+    right: 3px; }
+    nav .navbar-nav > li > .dropdown-menu li > a {
+      padding: 10px 20px; } }
+
+/*# sourceMappingURL=nav.css.map */

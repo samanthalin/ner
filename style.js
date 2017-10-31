@@ -12,6 +12,10 @@ $(document).ready(function(){
     $(".tab a").click(function(){
         $(".record").hide();
     });
+    $(".skip").click(function(){
+      $(".home-page").removeClass("question-toggle");
+      $(".question-block").hide();
+    });
 });
 
 function buttonUp(){

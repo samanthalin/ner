@@ -1,6 +1,9 @@
 @charset "UTF-8";
 @import url(//fonts.googleapis.com/earlyaccess/notosanstc.css);
 @import url(font-awesome/css/font-awesome.css);
+@import url(nav.css);
+@import url(question.css);
+@import url(login.css);
 html {
   height: 100%; }
 
@@ -107,146 +110,27 @@ table, tr, td {
   background-color: #e9e0d3;
   border-radius: 7px; }
 
+progress[value] {
+  /* Reset the default appearance */
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  width: 100%;
+  height: 5px;
+  border-radius: 2px; }
+
+progress[value]::-webkit-progress-bar, progress[value]::-moz-progress-bar {
+  background-color: white;
+  border-radius: 2px; }
+
+progress[value]::-webkit-progress-bar, progress[value]::-moz-progress-bar {
+  background-color: #e83b4d;
+  border-radius: 2px; }
+
 html .home-page {
   width: 100%;
   background-color: #2f3b46;
   overflow-x: hidden; }
-  html .home-page nav .navbar-default, html .home-page nav .navbar-toggle {
-    background-color: white !important; }
-  html .home-page nav .navbar-toggle {
-    border: none; }
-    html .home-page nav .navbar-toggle:focus {
-      background-color: white !important; }
-  html .home-page nav .navbar-brand {
-    padding: 0px;
-    padding-left: 10px; }
-    html .home-page nav .navbar-brand img {
-      height: 50px; }
-  @media (min-width: 768px) {
-    html .home-page nav .navbar-header {
-      margin-right: 30px; } }
-  html .home-page nav .nav-bar-content .nav .active2 a {
-    color: #f4af2e; }
-    @media (min-width: 768px) {
-      html .home-page nav .nav-bar-content .nav .active2 a:before {
-        position: absolute;
-        font-family: FontAwesome;
-        content: "\f0da";
-        margin-left: -13px; } }
-  html .home-page nav .nav-bar-content .nav .dropdown .dropdown-toggle {
-    display: flex !important; }
-    html .home-page nav .nav-bar-content .nav .dropdown .dropdown-toggle i, html .home-page nav .nav-bar-content .nav .dropdown .dropdown-toggle .user {
-      flex: initial; }
-    html .home-page nav .nav-bar-content .nav .dropdown .dropdown-toggle i {
-      font-size: 18px;
-      padding-top: 1px; }
-    html .home-page nav .nav-bar-content .nav .dropdown .dropdown-toggle .user {
-      margin-left: 5px; }
-  html .home-page nav .nav-bar-content .sb-search {
-    position: relative;
-    width: 0%;
-    min-width: 30px;
-    height: 30px;
-    float: left;
-    margin: auto;
-    margin-bottom: 10px;
-    overflow: hidden;
-    -webkit-transition: width 0.3s;
-    -moz-transition: width 0.3s;
-    transition: width 0.3s;
-    -webkit-backface-visibility: hidden; }
-    html .home-page nav .nav-bar-content .sb-search .sb-search-input {
-      position: absolute;
-      top: 0;
-      right: 0px;
-      border: none;
-      outline: none;
-      background: #fff;
-      width: 100%;
-      height: 30px;
-      margin: 0;
-      z-index: 10;
-      padding: 10px 35px 10px 15px;
-      font-family: inherit;
-      font-size: 13px;
-      vertical-align: middle;
-      line-height: 16px;
-      color: #2c3e50; }
-    @media (min-width: 768px) {
-      html .home-page nav .nav-bar-content .sb-search {
-        margin-top: 10px; } }
-  html .home-page nav .nav-bar-content .sb-search-open {
-    border: 1px solid #4c4c4c;
-    border-radius: 30px; }
-  html .home-page nav .nav-bar-content input[type="search"].sb-search-input {
-    -webkit-appearance: none;
-    -webkit-border-radius: 0px; }
-  html .home-page nav .nav-bar-content .sb-search-input::-webkit-input-placeholder {
-    color: #d8d8d8; }
-  html .home-page nav .nav-bar-content .sb-search-input:-moz-placeholder {
-    color: #d8d8d8; }
-  html .home-page nav .nav-bar-content .sb-search-input::-moz-placeholder {
-    color: #d8d8d8; }
-  html .home-page nav .nav-bar-content .sb-search-input:-ms-input-placeholder {
-    color: #d8d8d8; }
-  html .home-page nav .nav-bar-content .sb-icon-search,
-  html .home-page nav .nav-bar-content .sb-search-submit {
-    width: 26px;
-    height: 30px;
-    display: block;
-    position: absolute;
-    right: 0;
-    top: 0;
-    padding: 0;
-    margin: 0;
-    line-height: 29px;
-    text-align: left;
-    cursor: pointer; }
-  html .home-page nav .nav-bar-content .sb-search-submit {
-    background: #fff;
-    /* IE needs this */
-    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
-    /* IE 8 */
-    filter: alpha(opacity=0);
-    /* IE 5-7 */
-    opacity: 0;
-    color: transparent;
-    color: red;
-    border: none;
-    outline: none;
-    z-index: -1; }
-  html .home-page nav .nav-bar-content .sb-icon-search {
-    color: #4c4c4c;
-    z-index: 90;
-    font-size: 18px;
-    font-family: 'icomoon';
-    speak: none;
-    font-style: normal;
-    font-weight: normal;
-    font-variant: normal;
-    text-transform: none;
-    -webkit-font-smoothing: antialiased; }
-  html .home-page nav .nav-bar-content .sb-icon-search:before {
-    content: ""; }
-  html .home-page nav .nav-bar-content .sb-search.sb-search-open,
-  html .home-page nav .nav-bar-content .no-js .sb-search {
-    width: 100%; }
-    @media (min-width: 900px) {
-      html .home-page nav .nav-bar-content .sb-search.sb-search-open,
-      html .home-page nav .nav-bar-content .no-js .sb-search {
-        width: 250px; } }
-  html .home-page nav .nav-bar-content .sb-search.sb-search-open .sb-icon-search,
-  html .home-page nav .nav-bar-content .no-js .sb-search .sb-icon-search {
-    color: #4c4c4c;
-    z-index: 11; }
-  @media (min-width: 768px) {
-    html .home-page nav .navbar-nav > li > .dropdown-menu {
-      border: none;
-      border-radius: 0px;
-      margin-top: 4px;
-      right: 3px; }
-      html .home-page nav .navbar-nav > li > .dropdown-menu li > a {
-        padding: 10px 20px; } }
   html .home-page .section1 {
     position: relative;
     padding-top: 80px;
@@ -779,142 +663,6 @@ input[type=range]:focus::-ms-fill-upper {
 html .record-page {
   width: 100%;
   background-color: #2f3b46; }
-  html .record-page nav .navbar-default, html .record-page nav .navbar-toggle {
-    background-color: white !important; }
-  html .record-page nav .navbar-toggle {
-    border: none; }
-    html .record-page nav .navbar-toggle:focus {
-      background-color: white !important; }
-  html .record-page nav .navbar-brand {
-    padding: 0px;
-    padding-left: 10px; }
-    html .record-page nav .navbar-brand img {
-      height: 50px; }
-  @media (min-width: 768px) {
-    html .record-page nav .navbar-header {
-      margin-right: 30px; } }
-  html .record-page nav .nav-bar-content .nav .active2 a {
-    color: #f4af2e; }
-    @media (min-width: 768px) {
-      html .record-page nav .nav-bar-content .nav .active2 a:before {
-        position: absolute;
-        font-family: FontAwesome;
-        content: "\f0da";
-        margin-left: -13px; } }
-  html .record-page nav .nav-bar-content .nav .dropdown .dropdown-toggle {
-    display: flex !important; }
-    html .record-page nav .nav-bar-content .nav .dropdown .dropdown-toggle i, html .record-page nav .nav-bar-content .nav .dropdown .dropdown-toggle .user {
-      flex: initial; }
-    html .record-page nav .nav-bar-content .nav .dropdown .dropdown-toggle i {
-      font-size: 18px;
-      padding-top: 1px; }
-    html .record-page nav .nav-bar-content .nav .dropdown .dropdown-toggle .user {
-      margin-left: 5px; }
-  html .record-page nav .nav-bar-content .sb-search {
-    position: relative;
-    width: 0%;
-    min-width: 30px;
-    height: 30px;
-    float: left;
-    margin: auto;
-    margin-bottom: 10px;
-    overflow: hidden;
-    -webkit-transition: width 0.3s;
-    -moz-transition: width 0.3s;
-    transition: width 0.3s;
-    -webkit-backface-visibility: hidden; }
-    html .record-page nav .nav-bar-content .sb-search .sb-search-input {
-      position: absolute;
-      top: 0;
-      right: 0px;
-      border: none;
-      outline: none;
-      background: #fff;
-      width: 100%;
-      height: 30px;
-      margin: 0;
-      z-index: 10;
-      padding: 10px 35px 10px 15px;
-      font-family: inherit;
-      font-size: 13px;
-      vertical-align: middle;
-      line-height: 16px;
-      color: #2c3e50; }
-    @media (min-width: 768px) {
-      html .record-page nav .nav-bar-content .sb-search {
-        margin-top: 10px; } }
-  html .record-page nav .nav-bar-content .sb-search-open {
-    border: 1px solid #4c4c4c;
-    border-radius: 30px; }
-  html .record-page nav .nav-bar-content input[type="search"].sb-search-input {
-    -webkit-appearance: none;
-    -webkit-border-radius: 0px; }
-  html .record-page nav .nav-bar-content .sb-search-input::-webkit-input-placeholder {
-    color: #d8d8d8; }
-  html .record-page nav .nav-bar-content .sb-search-input:-moz-placeholder {
-    color: #d8d8d8; }
-  html .record-page nav .nav-bar-content .sb-search-input::-moz-placeholder {
-    color: #d8d8d8; }
-  html .record-page nav .nav-bar-content .sb-search-input:-ms-input-placeholder {
-    color: #d8d8d8; }
-  html .record-page nav .nav-bar-content .sb-icon-search,
-  html .record-page nav .nav-bar-content .sb-search-submit {
-    width: 26px;
-    height: 30px;
-    display: block;
-    position: absolute;
-    right: 0;
-    top: 0;
-    padding: 0;
-    margin: 0;
-    line-height: 29px;
-    text-align: left;
-    cursor: pointer; }
-  html .record-page nav .nav-bar-content .sb-search-submit {
-    background: #fff;
-    /* IE needs this */
-    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
-    /* IE 8 */
-    filter: alpha(opacity=0);
-    /* IE 5-7 */
-    opacity: 0;
-    color: transparent;
-    color: red;
-    border: none;
-    outline: none;
-    z-index: -1; }
-  html .record-page nav .nav-bar-content .sb-icon-search {
-    color: #4c4c4c;
-    z-index: 90;
-    font-size: 18px;
-    font-family: 'icomoon';
-    speak: none;
-    font-style: normal;
-    font-weight: normal;
-    font-variant: normal;
-    text-transform: none;
-    -webkit-font-smoothing: antialiased; }
-  html .record-page nav .nav-bar-content .sb-icon-search:before {
-    content: ""; }
-  html .record-page nav .nav-bar-content .sb-search.sb-search-open,
-  html .record-page nav .nav-bar-content .no-js .sb-search {
-    width: 100%; }
-    @media (min-width: 900px) {
-      html .record-page nav .nav-bar-content .sb-search.sb-search-open,
-      html .record-page nav .nav-bar-content .no-js .sb-search {
-        width: 250px; } }
-  html .record-page nav .nav-bar-content .sb-search.sb-search-open .sb-icon-search,
-  html .record-page nav .nav-bar-content .no-js .sb-search .sb-icon-search {
-    color: #4c4c4c;
-    z-index: 11; }
-  @media (min-width: 768px) {
-    html .record-page nav .navbar-nav > li > .dropdown-menu {
-      border: none;
-      border-radius: 0px;
-      margin-top: 4px;
-      right: 3px; }
-      html .record-page nav .navbar-nav > li > .dropdown-menu li > a {
-        padding: 10px 20px; } }
   html .record-page .section1 {
     position: relative;
     padding-top: 80px;

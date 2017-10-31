@@ -1,0 +1,64 @@
+.question-toggle {
+  overflow: hidden; }
+
+.question-block {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  left: 0;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 1040;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #2f3b46; }
+  .question-block .board {
+    width: 90%;
+    max-width: 495px;
+    background-color: white;
+    border-radius: 10px; }
+    .question-block .board .header {
+      background-color: #2f3b46;
+      color: white;
+      text-align: center;
+      padding: 20px 0;
+      border-radius: 9px 9px 0 0; }
+      .question-block .board .header .program-title {
+        font-size: 18px; }
+      .question-block .board .header .album-title {
+        margin-top: 10px; }
+    .question-block .board .content {
+      padding: 5%;
+      padding-bottom: 10%; }
+      .question-block .board .content .question-text {
+        margin-bottom: 20px; }
+      .question-block .board .content .option-table {
+        margin-bottom: 20px; }
+        .question-block .board .content .option-table .option {
+          border: 2px solid #2f3b46;
+          margin: 8px 0;
+          padding: 8px 20px;
+          border-radius: 3px; }
+          .question-block .board .content .option-table .option:hover, .question-block .board .content .option-table .option:active {
+            background-color: #2f3b46;
+            color: white;
+            cursor: pointer; }
+        .question-block .board .content .option-table .correct-answer {
+          background-color: #19ca90; }
+        .question-block .board .content .option-table .wrong-answer {
+          background-color: #e83b4d; }
+      .question-block .board .content .message {
+        float: left; }
+      .question-block .board .content .wrong-message {
+        color: #e83b4d; }
+      .question-block .board .content .right-message {
+        color: #19ca90; }
+      .question-block .board .content .skip {
+        float: right;
+        background: none;
+        border: none; }
+        .question-block .board .content .skip:focus {
+          outline: none; }
+
+/*# sourceMappingURL=question.css.map */
